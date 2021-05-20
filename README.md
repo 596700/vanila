@@ -1,2 +1,2 @@
-# vanila
+# vanilla
 Created with CodeSandbox
