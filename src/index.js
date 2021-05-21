@@ -45,20 +45,17 @@ const createIncompleteList = (text) => {
     const li = document.createElement("li");
     const div = document.createElement("div");
     div.className = "list-row";
-    // div.innerText = taskContent;
-    // console.log(div);
+
     const returnButton = document.createElement("button");
     returnButton.innerText = "戻す";
     returnButton.addEventListener("click", () => {
       // 戻すボタンを押して一度消す
       const deleteList = returnButton.closest("li");
-      console.log(deleteList);
       deleteList.remove();
 
       // テキスト取得
 
       const text = deleteList.children[0].children[0].innerHTML;
-      console.log(text);
       createIncompleteList(text);
     });
 
